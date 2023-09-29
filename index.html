@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monil's Pizza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- In the header section I have printed a welcome messsage and a background image -->
+    <header>
+        <div class="centerImage">
+            <h1> Welcome to Monil's</h1>
+        </div>
+    </header>
+    <main>
+
+        <div class="formContainer">
+
+            <form action="test.php" method="post">
+                <fieldset>
+                    <legend> Place your order !!</legend>
+
+                    <!-- In the form, i have taken inputs of different types -->
+                    <label for="Name">Name: </label>
+                    <input type="text" id="Name" name="Name" placeholder="xyz"/><br>
+                    <label for="ContactNo">Contact number: </label>
+                    <input type="tel" id="ContactNo" name="ContactNo" placeholder="123-456-7890"/><br>
+                    <label for="Email">Email: </label>
+                    <input type="email" id="Email" name="Email" placeholder="abc@gmail.com"/><br>
+                    <label for="bDay">Please enter your birthdate: </label>
+                    <input type="date" id="bDay" name="bDay" placeholder="abc@gmail.com"/><br>
+                    <label for="NumberOfpizza">number of pizza: </label>
+                    <input type="number" id="NumberOfpizza" name="NumberOfpizza" placeholder="Quantity" min="0"
+                        max="100"/><br>
+
+
+
+
+                    <div class="crustType">
+                        Choose Crust :
+                        <input type="radio" id="deepDish" name="Crust" value="deepDish"/>
+                        <label for="deepDish">Deep Dish</label>
+                        <input type="radio" id="thinCrust" name="Crust" value="thinCrust"/>
+                        <label for="thinCrust">Thin Crust</label>
+                        <input type="radio" id="CheeseBurst" name="Crust" value="CheeseBurst"/>
+                        <label for="CheeseBurst">Cheese Burst</label>
+                    </div>
+
+                    <label for="Toppings"> Toppings: </label>
+                    <select name="Toppings" id="Toppings">
+                        <option value="Margherita">Margherita</option>
+                        <option value="Cheese">Cheese</option>
+                        <option value="spinachArtichoke">Spinach Artichoke</option>
+                        <option value="Taco">Taco</option>
+                        <option value="Farmhouse">Farmhouse</option>
+                    </select>
+                    <div class="eatType">
+                        <input type="radio" id="eatIn" name="eat-type" value="eatIn">
+                        <label for="eatIn"> Eat In </label>
+                        <input type="radio" id="takeOut" name="eat-type" value="takeOut">
+                        <label for="eatIn"> Take Out </label>
+                        <input type="radio" id="Delivery" name="eat-type" value="Delivery">
+                        <label for="eatIn"> Delivery </label>
+                    </div>
+
+
+                    <label for="member"> Are you a Monil's pizza executive member ? </label>
+                    <input type="checkbox" name="member" id="member"> <br>
+                    <label for="Instructions"> Any specific instructions: </label> <br>
+                    <textarea name="Instructions" id="Instructions" cols="30" rows="5"
+                        placeholder="write a message"></textarea> <br>
+
+
+                    <button type="submit" value="submit"> Place Order</button>
+                    <button type="reset" value="reset"> Reset </button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <!-- In the footer i have displayed a copyright message with somewhat transparent background -->
+    <footer>
+        2023 Monil's @all rights reserved.
+    </footer>
+</body>
+
+</html>
